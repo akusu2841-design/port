@@ -272,6 +272,30 @@ button:hover {
   background: white;
   transform: scale(1.03);
 }
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+
+  transition: 0.3s ease;
+  margin-top: 15px;
+}
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.5);
+  background: #1ebe5d;
+}
 /* ================= FOOTER ================= */
 footer {
   background: #111827;
