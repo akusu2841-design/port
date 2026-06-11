@@ -1,100 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhockstar Portfolio</title>
-<link rel="stylesheet" href="style.css">
-  </head>
-
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-                       <!--NAVBAR-->
+  <!-- BACK BUTTON -->
+  <button id="backBtn">←</button>
 
+  <!-- NAVBAR -->
   <header class="navbar">
     <h2 class="logo">Rhockstar</h2>
+
     <nav>
-    <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="skills.html">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-    </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- HAMBURGER -->
+    <button id="menuBtn" class="hamburger">☰</button>
   </header>
 
-                    <!--HOME-->
-<main>
-  <section id="home">
-  
-  <h1 class="hero-title">Hi, I'm <span>Rhockstar</span></h1>
-  <p>I am a Web Developer & Designer</p>
-  <a href="projects.html">View My Work</a>
-    <a href="#contact">Contact Me</a>
-  </section>
+  <main>
 
+    <!-- HOME -->
+    <section id="home">
+      <h1 class="hero-title">Hi, I'm <span>Rhockstar</span></h1>
+      <p>I am a Web Developer & Designer</p>
 
-                  <!--ABOUT-->
-<section id="about">
-  <h2>About</h2>
-  
-  <p>I am <span>Elijah Peter</span>, a graduate of the <span>University of Ibadan</span>,a passionate <span>web developer</span>, <span>digital creator</span>, <span>editor</span>, <span>entrepreneur</span>, and <span>influencer</span> dedicated to building impactful solutions both online and offline.
+      <a href="projects.html">View My Work</a>
+      <a href="#contact">Contact Me</a>
+    </section>
 
-My journey combines technology, creativity, and business. As a developer, I focus on creating modern, responsive, and user-friendly web applications that solve real problems and deliver meaningful user experiences. I enjoy turning ideas into functional digital products through clean design, thoughtful planning, and continuous improvement.
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
 
-Beyond development, I have strong experience in <span>content editing, visual enhancement, and digital media creation</span>, allowing me to bring a creative perspective to every project. My ability to blend technical skills with creativity helps me produce content and experiences that are both effective and engaging.
+      <p>
+        I am <span>Elijah Peter</span>, a graduate of the
+        <span>University of Ibadan</span>, a passionate
+        <span>web developer</span>, <span>digital creator</span>,
+        <span>editor</span>, <span>entrepreneur</span>, and
+        <span>influencer</span> dedicated to building impactful
+        solutions both online and offline.
 
-As an entrepreneur, I am passionate about identifying opportunities, building brands, and creating value through innovative ideas and strategic thinking. My interest in influencing and digital community building has also strengthened my communication skills, enabling me to connect with diverse audiences and share knowledge, inspiration, and opportunities.
+        My journey combines technology, creativity, and business.
+        As a developer, I focus on creating modern, responsive,
+        and user-friendly web applications that solve real problems
+        and deliver meaningful user experiences.
 
-I am a strong believer in continuous learning, innovation, and personal growth. With strengths in <span>web development, graphic design, editing, AI utilization, prompt engineering, problem-solving, analytical reasoning, business development, and digital strategy</span>, I am constantly working to expand my skills and create projects that make a lasting impact.
+        Beyond development, I have strong experience in
+        <span>content editing, visual enhancement, and digital media creation</span>,
+        allowing me to bring a creative perspective to every project.
 
-My goal is to build powerful digital solutions, grow meaningful communities, and contribute to the future of technology, business, and creative media.
-</p>
-  
-</section>
+        As an entrepreneur, I am passionate about identifying opportunities,
+        building brands, and creating value through innovative ideas and
+        strategic thinking.
 
-                      <!--CONTACT-->
+        I am a strong believer in continuous learning, innovation,
+        and personal growth. With strengths in
+        <span>web development, graphic design, editing, AI utilization,
+        prompt engineering, problem-solving, analytical reasoning,
+        business development, and digital strategy</span>,
+        I am constantly working to expand my skills and create projects
+        that make a lasting impact.
+      </p>
+    </section>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-  <label for="name">Name:</label>
-  <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
 
-  <label for="email">Email:</label>
-  <input id="email" name="email" type="email" placeholder="Enter your email" required/>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        >
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
-  <button type="submit">Submit</button>
-  </form>
-   <a href="http://wa.me/2348074647269" target="_blank" rel="noopener noreferrer">Whatsapp</a>
-</section>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        >
 
-                    <!--PHONE-->
-  <button id="menuBtn" class="hamburger">☰</button>
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message..."
+          required
+        ></textarea>
 
-<ul id="menu" class="mobile-menu">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="skills.html">Skills</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-  
+        <button type="submit">Submit</button>
+      </form>
+
+      <a
+        href="https://wa.me/2348074647269"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+    </section>
+
+    <!-- MOBILE MENU -->
+    <ul id="menu" class="mobile-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
   </main>
-  
 
-                      <!--FOOTER-->
+  <!-- FOOTER -->
   <footer>
-   <p>© 2026 Rhockstar Nation. All Rights Reserved.</p>
+    <p>© 2026 Rhockstar Nation. All Rights Reserved.</p>
     <p>Designed and developed by Elijah Peter.</p>
     <p>Email: rhockstarnation@gmail.com</p>
-    <p>Whatsapp: +2348074647269</p>
+    <p>WhatsApp: +2348074647269</p>
   </footer>
 
   <script src="app.js"></script>
 </body>
-</html>
+  </html>
