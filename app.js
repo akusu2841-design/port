@@ -1,10 +1,9 @@
-const backBtn = Document.getElementById("backBtn");
-backBtn.addEventListener("click",function()
-                         {history.back();});
+const backBtn = document.getElementById("backBtn");
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
 
-const menuBtn = document.getElementById("menuBtn")
-const menu = document.getElementById("menu")
+backBtn.addEventListener("click", () => history.back());
 
-menuBtn.addEventListener("click",function(){
-menu.classList.toggle("active");
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
 });
