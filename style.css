@@ -120,6 +120,14 @@ body {
   transform: scale(1.05);
 }
 
+/* ================= ABOUT SPAN ================= */
+
+.highlight {
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+
 /* ================= SECTIONS ================= */
 section {
   padding: 80px 20px;
