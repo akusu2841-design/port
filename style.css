@@ -319,12 +319,12 @@ footer {
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .navbar {
+  .hamburger {
     flex-direction: column;
     gap: 10px;
   }
 .nav-links.active {
-  display: flex;
+  display: block;
   }
   .navbar ul {
     flex-direction: column;
