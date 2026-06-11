@@ -332,7 +332,7 @@ footer {
 }
 
 /* Hamburger Button */
-.hamburger {
+#menuBtn {
   position: fixed;
   top: 10px;
   right: 10px;
