@@ -8,9 +8,10 @@
 }
 
 /* BODY */
-body {
  html {
   scroll-behavior: smooth;
+
+body {
 }
   background: #0f172a;
   color: white;
@@ -322,7 +323,9 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-
+.nav-links.active {
+  display: flex;
+  }
   .navbar ul {
     flex-direction: column;
     gap: 10px;
