@@ -3,8 +3,8 @@ backBtn.addEventListener("click", function()
                          {history.back();});
 
 const menuBtn = document.getElementById("menuBtn")
-const navLinks = document.getElementById("nav-links")
+const menu = document.getElementById("menu")
 
-navLinks.addEventListener("click", function(){
-menuBtn.classList.toggle("active")
+menuBtn.addEventListener("click", function(){
+menu.classList.toggle("active");
 });
