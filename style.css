@@ -10,9 +10,9 @@
 /* BODY */
  html {
   scroll-behavior: smooth;
+}
 
 body {
-}
   background: #0f172a;
   color: white;
   line-height: 1.6;
@@ -318,17 +318,21 @@ footer {
 }
 
 /* ================= MOBILE ================= */
+
 /* Back Button */
 #backBtn {
   position: fixed;
   top: 10px;
   left: 10px;
-  padding: 5px 10px;
+  width: auto;
+  padding: 6px 12px;
   font-size: 16px;
+  background: #38bdf8;
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 /* Hamburger Button */
@@ -336,27 +340,38 @@ footer {
   position: fixed;
   top: 10px;
   right: 10px;
-  font-size: 28px;
-  background-color: #333;
+
+  background: #38bdf8;
   color: white;
+
   border: 2px solid white;
+  border-radius: 8px;
+
+  padding: 8px 12px;
+  font-size: 24px;
+
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
+
   display: none;
 }
 
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 50px;
+  top: 60px;
   right: -250px;
+
   width: 220px;
-  height: auto;
-  background: #222;
+  background: #111827;
+
   list-style: none;
   padding: 20px;
+
+  border-radius: 10px 0 0 10px;
+
   transition: right 0.3s ease;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .mobile-menu li {
@@ -366,6 +381,7 @@ footer {
 .mobile-menu a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .mobile-menu.active {
@@ -374,16 +390,20 @@ footer {
 
 /* Mobile View */
 @media (max-width: 768px) {
+
   nav {
     display: none;
   }
 
-  .hamburger {
+  #menuBtn {
     display: block;
   }
-}
 
-  #home h2 {
+  .hero-title {
     font-size: 35px;
+  }
+
+  section {
+    padding: 60px 15px;
   }
 }
