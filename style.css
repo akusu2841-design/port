@@ -319,22 +319,6 @@ footer {
 
 /* ================= MOBILE ================= */
 
-/* Back Button */
-#backBtn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  padding: 6px 12px;
-  font-size: 16px;
-  background: #38bdf8;
-  color: black;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
 /* Hamburger Button */
 #menuBtn {
   position: fixed;
