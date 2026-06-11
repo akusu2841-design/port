@@ -9,6 +9,9 @@
 
 /* BODY */
 body {
+ html {
+  scroll-behavior: smooth;
+}
   background: #0f172a;
   color: white;
   line-height: 1.6;
