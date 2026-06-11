@@ -1,9 +1,16 @@
 const backBtn = document.getElementById("backBtn");
+
+if (backBtn) {
+  backBtn.addEventListener("click", () => {
+    history.back();
+  });
+}
+
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
-backBtn.addEventListener("click", () => history.back());
-
-menuBtn.addEventListener("click", () => {
+if (menuBtn && menu) {
+  menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
-});
+  });
+}
