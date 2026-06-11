@@ -319,7 +319,6 @@ footer {
 
 /* ================= MOBILE ================= */
 
-/* Hamburger Button */
 #menuBtn {
   position: fixed;
   top: 15px;
@@ -327,6 +326,9 @@ footer {
 
   width: 45px;
   height: 45px;
+
+  margin: 0;
+  padding: 0;
 
   background: #38bdf8;
   color: white;
@@ -337,7 +339,7 @@ footer {
   font-size: 22px;
   line-height: 1;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -378,14 +380,14 @@ footer {
 }
 
 /* Mobile View */
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
 
   nav {
     display: none;
   }
 
   #menuBtn {
-    display: block;
+    display: flex;
   }
 
   .hero-title {
