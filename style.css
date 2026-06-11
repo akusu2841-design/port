@@ -319,7 +319,7 @@ footer {
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .hamburger {
+  #menuBtn {
     flex-direction: column;
     gap: 10px;
   }
