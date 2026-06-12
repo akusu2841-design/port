@@ -62,7 +62,7 @@ body {
 .profile-photo {
   width: 300px;
   height: auto;
-  background-radius: 10px;
+  border-radius: 10px;
   display: block;
   margin: 20px auto;
 }
@@ -195,6 +195,20 @@ h3 {
   transition: 0.4s ease;
 }
 
+h3 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
 h3::before {
   content: "";
   position: absolute;
@@ -209,6 +223,14 @@ h3::before {
     transparent
   );
   transition: 0.5s;
+}
+
+h3:hover::before {
+  left: 100%;
+}
+
+h3:hover {
+  transform: translateY(-2px);
 }
 
 /* ================= PROJECTS ================= */
@@ -392,7 +414,7 @@ footer {
 }
 
 /* Mobile View */
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   nav {
     display: none;
