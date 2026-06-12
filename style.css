@@ -181,6 +181,8 @@ section {
 
 section h2 {
   text-align: center;
+  border-size: 10px;
+  border-color: white;
   font-size: 32px;
   margin-bottom: 20px;
   color: #38bdf8;
