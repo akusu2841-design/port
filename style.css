@@ -55,6 +55,18 @@ body {
   color: #0f172a;
 }
 
+
+
+/* ================= PROFILE PHOTO ================= */
+
+.profile-photo {
+  width: 300px;
+  height: auto;
+  background-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
 /* ================= HOME ================= */
 
 .hero-title {
