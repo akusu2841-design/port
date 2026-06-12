@@ -141,6 +141,18 @@ body {
   transform: scale(1.05);
 }
 
+/* ================= VIEW & CONTACT BUTTON ================= */
+
+.view-con-Btn {
+background: #38bdf8;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 8px;
+
+  font-size: 22px;
+  line-height: 1;
+}
 /* ================= ABOUT ================= */
 
 #about {
