@@ -15,24 +15,27 @@ if (menuBtn && menu) {
   });
 }
 
-emailjs.init("wAjPi_RdXifi5CZNw");
+// EmailJS
+emailjs.init("wAjPi_RdXifi5CZw");
 
 const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  emailjs.sendForm(
-    "service_egluhxm",
-    "template_w73ml7r",
-    form
-  )
-  .then(() => {
-    alert("Message sent successfully!");
-    form.reset();
-  })
-  .catch((error) => {
-    alert("Failed to send message.");
-    console.log(error);
+    emailjs.sendForm(
+      "service_egluhm",
+      "template_w73ml7r",
+      form
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      form.reset();
+    })
+    .catch((error) => {
+      alert("Failed to send message.");
+      console.error(error);
+    });
   });
-});
+}
