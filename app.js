@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize EmailJS
   emailjs.init({
-    publicKey: "wAjPi_RdXifi5CZw"
+    publicKey: "wAjPi_RdXifi5CZNw"
   });
 
   const form = document.getElementById("contact-form");
