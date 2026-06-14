@@ -14,3 +14,25 @@ if (menuBtn && menu) {
     menu.classList.toggle("active");
   });
 }
+
+emailjs.init("wAjPi_RdXifi5CZNw");
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_egluhxm",
+    "template_w73ml7r",
+    form
+  )
+  .then(() => {
+    alert("Message sent successfully!");
+    form.reset();
+  })
+  .catch((error) => {
+    alert("Failed to send message.");
+    console.log(error);
+  });
+});
