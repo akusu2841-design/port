@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
 
       emailjs.sendForm(
-        "service_egluhm",
+        "service_egluhxm",
         "template_w73ml7r",
         this
       )
