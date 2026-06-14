@@ -1,3 +1,4 @@
+// Back Button
 const backBtn = document.getElementById("backBtn");
 
 if (backBtn) {
@@ -6,6 +7,7 @@ if (backBtn) {
   });
 }
 
+// Mobile Menu
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
@@ -15,27 +17,34 @@ if (menuBtn && menu) {
   });
 }
 
-// EmailJS
-emailjs.init("wAjPi_RdXifi5CZw");
+// Wait until page loads
+document.addEventListener("DOMContentLoaded", () => {
 
-const form = document.getElementById("contact-form");
-
-if (form) {
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      "service_egluhm",
-      "template_w73ml7r",
-      form
-    )
-    .then(() => {
-      alert("Message sent successfully!");
-      form.reset();
-    })
-    .catch((error) => {
-      alert("Failed to send message.");
-      console.error(error);
-    });
+  // Initialize EmailJS
+  emailjs.init({
+    publicKey: "wAjPi_RdXifi5CZw"
   });
-}
+
+  const form = document.getElementById("contact-form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_egluhm",
+        "template_w73ml7r",
+        this
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message.");
+      });
+    });
+  }
+
+});
